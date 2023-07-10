@@ -1,0 +1,23 @@
+// @import "test.scss";
+// @import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "_variables.scss";
+@import "_fonts.scss";
+@import "_home.scss";
+@import "component/_button.scss";
+
+// OVERRIDE
+.card-img-top {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+
+.custom-popover {
+  --bs-popover-max-width: 200px;
+  --bs-popover-border-color: #94d82d;
+  --bs-popover-header-bg: #94d82d;
+  --bs-popover-header-color: var(--bs-white);
+  --bs-popover-body-padding-x: 1rem;
+  --bs-popover-body-padding-y: 0.5rem;
+}

@@ -1,0 +1,166 @@
+.heading-primary {
+  text-transform: uppercase;
+  /* prevent the shaking of heading element at the end of animation */
+  backface-visibility: hidden; }
+  .heading-primary-main {
+    color: #fff;
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    animation-name: moveInLeft;
+    animation-duration: 2s; }
+  .heading-primary-sub {
+    color: #94d82d;
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    animation-name: moveInRight;
+    animation-duration: 2s; }
+
+.heading-secondary {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  color: #94d82d;
+  letter-spacing: 2px; }
+
+.heading-tertiary {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: capitalize; }
+
+.paragraph {
+  font-size: 1.2rem; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+.header {
+  height: 75vh;
+  background-image: linear-gradient(to bottom right, rgba(173, 181, 189, 0.75), rgba(33, 37, 41, 0.8)), url(../assets/img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  text-align: center;
+  position: relative; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.section-research {
+  background-color: #f1f3f5;
+  padding: 5rem 0; }
+  .section-research-area {
+    box-shadow: 0 2.4rem 4.8rem rgba(51, 51, 51, 0.25); }
+  .section-research-img-container {
+    width: 20rem; }
+
+.section-people {
+  background-color: #f8f9fa;
+  padding: 5rem 0; }
+  .section-people-photo {
+    object-fit: cover;
+    border: 0.5rem solid rgba(148, 216, 45, 0.6);
+    transition: all 0.3s; }
+    .section-people-photo:hover {
+      transform: translateY(-0.75rem) scale(1.03); }
+  .section-people-pi-resume ul li {
+    list-style-type: none; }
+  .section-people-team-member {
+    margin-bottom: 2rem; }
+    .section-people-team-member-icon {
+      color: #74b816; }
+    .section-people-team-member-add {
+      height: 8rem;
+      width: 8rem;
+      color: rgba(148, 216, 45, 0.4);
+      margin-bottom: 1rem;
+      border: 0.5rem solid rgba(148, 216, 45, 0.6);
+      transition: all 0.3s; }
+      .section-people-team-member-add:hover {
+        transform: translateY(-0.75rem) scale(1.03); }
+    .section-people-team-member-contact:hover {
+      cursor: pointer; }
+  .section-people-team-member img {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 1rem; }
+  .section-people-joinus {
+    text-decoration: none;
+    color: #333; }
+
+.section-publication {
+  background-color: #f1f3f5;
+  padding: 5rem 0; }
+  .section-publication-papers {
+    font-size: 1.2rem;
+    color: #333; }
+    .section-publication-papers-paper {
+      padding: 1rem 2rem;
+      box-shadow: 0 1.2rem 4.8rem rgba(51, 51, 51, 0.1); }
+    .section-publication-papers-paper:not(:last-child) {
+      border-bottom: 2px solid rgba(148, 216, 45, 0.4); }
+
+.btn-text:link, .btn-text:visited {
+  font-size: 1.2rem;
+  color: #94d82d;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #94d82d;
+  padding: 3px;
+  transition: all 0.2s; }
+
+.btn-text:hover {
+  background-color: #94d82d;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 1rem 2rem rgba(51, 51, 51, 0.15); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(51, 51, 51, 0.15);
+  transform: translateY(0); }
+
+.btn-showup-animation {
+  animation: moveInBottom 2s; }
+
+.card-img-top {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover; }
+
+.custom-popover {
+  --bs-popover-max-width: 200px;
+  --bs-popover-border-color: #94d82d;
+  --bs-popover-header-bg: #94d82d;
+  --bs-popover-header-color: var(--bs-white);
+  --bs-popover-body-padding-x: 1rem;
+  --bs-popover-body-padding-y: 0.5rem; }

@@ -1,0 +1,117 @@
+// HEADER
+.header {
+  height: 75vh;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba($cus-color-gray-primary, 0.75),
+      rgba($cus-color-gray-dark, 0.8)
+    ),
+    url(../assets/img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  text-align: center;
+  position: relative;
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// RESEARCH
+.section-research {
+  background-color: $cus-color-gray-light;
+  padding: 5rem 0;
+
+  &-area {
+    box-shadow: 0 2.4rem 4.8rem rgba($cus-color-black, 0.25);
+  }
+
+  &-img-container {
+    width: 20rem;
+  }
+}
+
+// PEOPLE
+.section-people {
+  background-color: $cus-color-gray-exLight;
+  padding: 5rem 0;
+
+  &-photo {
+    object-fit: cover;
+    border: 0.5rem solid rgba($cus-color-primary, 0.6);
+    transition: all 0.3s;
+
+    &:hover {
+      transform: translateY(-0.75rem) scale(1.03);
+    }
+  }
+
+  &-pi {
+    &-resume {
+      & ul li {
+        list-style-type: none;
+      }
+    }
+  }
+
+  &-team-member {
+    margin-bottom: 2rem;
+
+    &-icon {
+      color: $cus-color-dark;
+    }
+
+    &-add {
+      height: 8rem;
+      width: 8rem;
+      color: rgba($cus-color-primary, 0.4);
+      margin-bottom: 1rem;
+      border: 0.5rem solid rgba($cus-color-primary, 0.6);
+      transition: all 0.3s;
+
+      &:hover {
+        transform: translateY(-0.75rem) scale(1.03);
+      }
+    }
+
+    &-contact {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-team-member img {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+  }
+
+  &-joinus {
+    text-decoration: none;
+    color: $cus-color-black;
+  }
+}
+
+// PUBLICATION
+.section-publication {
+  background-color: $cus-color-gray-light;
+  padding: 5rem 0;
+
+  &-papers {
+    font-size: $cus-default-font-size;
+    color: $cus-color-black;
+
+    &-paper {
+      padding: 1rem 2rem;
+      box-shadow: 0 1.2rem 4.8rem rgba($cus-color-black, 0.1);
+    }
+
+    &-paper:not(:last-child) {
+      border-bottom: 2px solid rgba($cus-color-primary, 0.4);
+    }
+  }
+}
