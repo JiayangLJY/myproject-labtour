@@ -115,3 +115,30 @@
     }
   }
 }
+
+// FOOTER
+.footer {
+  background-color: $cus-color-black;
+  color: $cus-color-white;
+
+  &-icons {
+    transition: all 0.3s;
+
+    &-container {
+      display: inline-block;
+      margin-right: 2rem;
+      &:hover {
+        cursor: pointer;
+        transform: translateY(-4px);
+      }
+
+      &-icon {
+        color: $cus-color-primary;
+      }
+    }
+  }
+
+  &-link {
+    color: $cus-color-primary;
+  }
+}

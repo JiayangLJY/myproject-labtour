@@ -130,6 +130,22 @@
     .section-publication-papers-paper:not(:last-child) {
       border-bottom: 2px solid rgba(148, 216, 45, 0.4); }
 
+.footer {
+  background-color: #333;
+  color: #fff; }
+  .footer-icons {
+    transition: all 0.3s; }
+    .footer-icons-container {
+      display: inline-block;
+      margin-right: 2rem; }
+      .footer-icons-container:hover {
+        cursor: pointer;
+        transform: translateY(-4px); }
+      .footer-icons-container-icon {
+        color: #94d82d; }
+  .footer-link {
+    color: #94d82d; }
+
 .btn-text:link, .btn-text:visited {
   font-size: 1.2rem;
   color: #94d82d;
