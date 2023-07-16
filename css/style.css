@@ -64,7 +64,7 @@
     transform: translate(0); } }
 
 .header {
-  height: 75vh;
+  height: 80vh;
   background-image: linear-gradient(to bottom right, rgba(173, 181, 189, 0.75), rgba(33, 37, 41, 0.8)), url(../assets/img/hero.jpg);
   background-size: cover;
   background-position: top;
