@@ -29,9 +29,9 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- TODO: .avtive link -->
     <!-- navbar -->
     <nav
+      id="navbar"
       class="navbar navbar-expand-lg bg-dark sticky-top"
       data-bs-theme="dark"
     >
@@ -52,9 +52,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto text-uppercase">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#navbarNav">
-                Home
-              </a>
+              <a class="nav-link" aria-current="page" href="#home"> Home </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#research">Research</a>
@@ -70,304 +68,313 @@
       </div>
     </nav>
 
-    <!-- header -->
-    <header class="header">
-      <div class="header__text-box">
-        <h1 class="heading-primary">
-          <span class="heading-primary-main mb-4">Yim Lab</span>
-          <span class="heading-primary-sub mb-5">where amazing happens</span>
-        </h1>
-        <a href="#research" class="btn-showup-animation btn-text">
-          Learn More &#8595;
-        </a>
-      </div>
-    </header>
+    <!-- page content are scrolling spied -->
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar"
+      data-bs-smooth-scroll="true"
+    >
+      <!-- header -->
+      <header class="header" id="home">
+        <div class="header__text-box">
+          <h1 class="heading-primary">
+            <span class="heading-primary-main mb-4">Yim Lab</span>
+            <span class="heading-primary-sub mb-5">where amazing happens</span>
+          </h1>
+          <a href="#research" class="btn-showup-animation btn-text">
+            Learn More &#8595;
+          </a>
+        </div>
+      </header>
 
-    <!-- research -->
-    <section class="section-research" id="research">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="heading-secondary mb-5">Research</h2>
+      <!-- research -->
+      <section class="section-research" id="research">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="heading-secondary mb-5">Research</h2>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-4 mb-3">
+              <div class="card section-research-area">
+                <img
+                  src="/assets/img/res-1.jpg"
+                  class="card-img-top img-fluid"
+                  alt="image for topic1 in our lab"
+                />
+                <div class="card-body">
+                  <h5 class="card-title heading-tertiary">Topic1</h5>
+                  <p class="card-text paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nobis, quos cum. Adipisci placeat recusandae libero nulla
+                    id, voluptatum obcaecati molestiae voluptatibus. Recusandae
+                    consectetur dolores velit, modi quis ab deserunt illo
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card section-research-area">
+                <img
+                  src="/assets/img/res-2.jpg"
+                  class="card-img-top img-fluid"
+                  alt="image for topic2 in our lab"
+                />
+                <div class="card-body">
+                  <h5 class="card-title heading-tertiary">Topic2</h5>
+                  <p class="card-text paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia corporis velit accusamus, facilis quam totam
+                    asperiores cupiditate repudiandae autem cum consectetur ab,
+                    amet, hic vel esse dolorum? Maiores, placeat accusantium
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card section-research-area">
+                <img
+                  src="/assets/img/res-3.jpg"
+                  class="card-img-top img-fluid"
+                  alt="image for topic3 in our lab"
+                />
+                <div class="card-body">
+                  <h5 class="card-title heading-tertiary">Topic3</h5>
+                  <p class="card-text paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                    deserunt animi, tempore ducimus, culpa nostrum sed omnis
+                    molestiae natus delectus maiores, corrupti facilis qui id.
+                    Optio repudiandae officiis quod maxime
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row text-center">
-          <div class="col-md-4 mb-3">
-            <div class="card section-research-area">
-              <img
-                src="/assets/img/res-1.jpg"
-                class="card-img-top img-fluid"
-                alt="image for topic1 in our lab"
-              />
-              <div class="card-body">
-                <h5 class="card-title heading-tertiary">Topic1</h5>
-                <p class="card-text paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nobis, quos cum. Adipisci placeat recusandae libero nulla id,
-                  voluptatum obcaecati molestiae voluptatibus. Recusandae
-                  consectetur dolores velit, modi quis ab deserunt illo
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card section-research-area">
-              <img
-                src="/assets/img/res-2.jpg"
-                class="card-img-top img-fluid"
-                alt="image for topic2 in our lab"
-              />
-              <div class="card-body">
-                <h5 class="card-title heading-tertiary">Topic2</h5>
-                <p class="card-text paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Mollitia corporis velit accusamus, facilis quam totam
-                  asperiores cupiditate repudiandae autem cum consectetur ab,
-                  amet, hic vel esse dolorum? Maiores, placeat accusantium
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card section-research-area">
-              <img
-                src="/assets/img/res-3.jpg"
-                class="card-img-top img-fluid"
-                alt="image for topic3 in our lab"
-              />
-              <div class="card-body">
-                <h5 class="card-title heading-tertiary">Topic3</h5>
-                <p class="card-text paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-                  deserunt animi, tempore ducimus, culpa nostrum sed omnis
-                  molestiae natus delectus maiores, corrupti facilis qui id.
-                  Optio repudiandae officiis quod maxime
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- people -->
-    <section class="section-people" id="people">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="heading-secondary mb-5">People</h2>
-        </div>
-        <!-- PI -->
-        <div class="section-people-pi row mb-5">
-          <!-- PI photo -->
-          <div class="col-md-3 mb-4">
-            <img
-              src="/assets/img/people-pi.png"
-              class="img-fluid rounded-circle section-people-photo ms-md-5"
-              alt="photo of lab PI"
-            />
+      <!-- people -->
+      <section class="section-people" id="people">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="heading-secondary mb-5">People</h2>
           </div>
-          <!-- PI resume -->
-          <div class="section-people-pi-resume col-md-8 ms-md-5">
-            <h2 class="heading-tertiary mb-3 ms-md-5">Yim Leo</h2>
-            <ul class="paragraph ms-md-5 ps-0">
-              <li>
-                Principal investigator of Northeastern University (2023-present)
-              </li>
-              <li>Sammamish River Researcher (2022)</li>
-              <li>PhD of Nuclear Physics (NEU, 2021)</li>
-              <li>Ms of Computer Science (BNU, 2018)</li>
-              <li>Bachelor of Biological Science (SCU, 2015)</li>
-              <li class="text-body-secondary">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Corporis doloremque laboriosam harum odit neque voluptatibus
-                est. Earum, dignissimos. Libero iure officia facilis vero dolore
-                assumenda, rerum obcaecati culpa dolorum consequuntur.
-              </li>
-            </ul>
-          </div>
-          <!-- contacts -->
-          <!-- <div class="col-md-3 text-center">
+          <!-- PI -->
+          <div class="section-people-pi row mb-5">
+            <!-- PI photo -->
+            <div class="col-md-3 mb-4">
+              <img
+                src="/assets/img/people-pi.png"
+                class="img-fluid rounded-circle section-people-photo ms-md-5"
+                alt="photo of lab PI"
+              />
+            </div>
+            <!-- PI resume -->
+            <div class="section-people-pi-resume col-md-8 ms-md-5">
+              <h2 class="heading-tertiary mb-3 ms-md-5">Yim Leo</h2>
+              <ul class="paragraph ms-md-5 ps-0">
+                <li>
+                  Principal investigator of Northeastern University
+                  (2023-present)
+                </li>
+                <li>Sammamish River Researcher (2022)</li>
+                <li>PhD of Nuclear Physics (NEU, 2021)</li>
+                <li>Ms of Computer Science (BNU, 2018)</li>
+                <li>Bachelor of Biological Science (SCU, 2015)</li>
+                <li class="text-body-secondary">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Corporis doloremque laboriosam harum odit neque voluptatibus
+                  est. Earum, dignissimos. Libero iure officia facilis vero
+                  dolore assumenda, rerum obcaecati culpa dolorum consequuntur.
+                </li>
+              </ul>
+            </div>
+            <!-- contacts -->
+            <!-- <div class="col-md-3 text-center">
             <div class="container border section-people-pi-contact">
               <h3 class="heading-tertiary mb-3">Contact</h3>
               <div class="paragraph">123-456-7890</div>
               <div class="paragraph">loremipsum@gmail.com</div>
             </div>
           </div> -->
+          </div>
+          <!-- students -->
+          <div class="row text-center">
+            <div class="col-md-3 mb-3">
+              <div class="section-people-team-member">
+                <img
+                  class="mx-auto rounded-circle section-people-photo"
+                  src="assets/img/people-1.jpg"
+                  alt="..."
+                />
+                <h3 class="heading-tertiary">Lorem Ipsum</h3>
+                <div class="paragraph">
+                  <ion-icon
+                    name="call-outline"
+                    class="section-people-team-member-icon"
+                  ></ion-icon>
+                  123-456-7890
+                </div>
+                <div class="paragraph">
+                  <ion-icon
+                    name="mail-outline"
+                    class="section-people-team-member-icon"
+                  ></ion-icon>
+                  loremipsum@gmail.com
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="section-people-team-member">
+                <img
+                  class="mx-auto rounded-circle section-people-photo"
+                  src="assets/img/people-2.jpg"
+                  alt="..."
+                />
+                <h3 class="heading-tertiary">Lorem Ipsum</h3>
+                <div class="paragraph">
+                  <ion-icon
+                    name="call-outline"
+                    class="section-people-team-member-icon"
+                  ></ion-icon>
+                  123-456-7890
+                </div>
+                <div class="paragraph">
+                  <ion-icon
+                    name="mail-outline"
+                    class="section-people-team-member-icon"
+                  ></ion-icon>
+                  loremipsum@gmail.com
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="section-people-team-member">
+                <img
+                  class="mx-auto rounded-circle section-people-photo"
+                  src="assets/img/people-3.jpg"
+                  alt="..."
+                />
+                <h3 class="heading-tertiary">Lorem Ipsum</h3>
+                <div class="paragraph">
+                  <ion-icon
+                    name="call-outline"
+                    class="section-people-team-member-icon"
+                  ></ion-icon>
+                  123-456-7890
+                </div>
+                <div class="paragraph">
+                  <ion-icon
+                    name="mail-outline"
+                    class="section-people-team-member-icon"
+                  ></ion-icon>
+                  loremipsum@gmail.com
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="section-people-team-member">
+                <img
+                  class="mx-auto rounded-circle section-people-photo"
+                  src="assets/img/people-4.jpg"
+                  alt="..."
+                />
+                <h3 class="heading-tertiary">Lorem Ipsum</h3>
+                <div class="paragraph">
+                  <ion-icon
+                    name="call-outline"
+                    class="section-people-team-member-icon"
+                  ></ion-icon>
+                  123-456-7890
+                </div>
+                <div class="paragraph">
+                  <ion-icon
+                    name="mail-outline"
+                    class="section-people-team-member-icon"
+                  ></ion-icon>
+                  loremipsum@gmail.com
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="section-people-team-member">
+                <img
+                  class="mx-auto rounded-circle section-people-photo"
+                  src="assets/img/people-5.png"
+                  alt="..."
+                />
+                <h3 class="heading-tertiary">Lorem Ipsum</h3>
+                <div class="paragraph">
+                  <ion-icon
+                    name="call-outline"
+                    class="section-people-team-member-icon"
+                  ></ion-icon>
+                  123-456-7890
+                </div>
+                <div class="paragraph">
+                  <ion-icon
+                    name="mail-outline"
+                    class="section-people-team-member-icon"
+                  ></ion-icon>
+                  loremipsum@gmail.com
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div
+                class="section-people-team-member section-people-team-member-contact"
+                data-bs-container="body"
+                data-bs-toggle="popover"
+                data-bs-placement="bottom"
+                data-bs-custom-class="custom-popover"
+                data-bs-title="Contact Info"
+                data-bs-content="Please contact JY by ljyjiayang@gmail.com"
+              >
+                <ion-icon
+                  class="section-people-team-member-add rounded-circle"
+                  name="add-outline"
+                ></ion-icon>
+                <h3 class="heading-tertiary">Join us!</h3>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- students -->
-        <div class="row text-center">
-          <div class="col-md-3 mb-3">
-            <div class="section-people-team-member">
-              <img
-                class="mx-auto rounded-circle section-people-photo"
-                src="assets/img/people-1.jpg"
-                alt="..."
-              />
-              <h3 class="heading-tertiary">Lorem Ipsum</h3>
-              <div class="paragraph">
-                <ion-icon
-                  name="call-outline"
-                  class="section-people-team-member-icon"
-                ></ion-icon>
-                123-456-7890
-              </div>
-              <div class="paragraph">
-                <ion-icon
-                  name="mail-outline"
-                  class="section-people-team-member-icon"
-                ></ion-icon>
-                loremipsum@gmail.com
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="section-people-team-member">
-              <img
-                class="mx-auto rounded-circle section-people-photo"
-                src="assets/img/people-2.jpg"
-                alt="..."
-              />
-              <h3 class="heading-tertiary">Lorem Ipsum</h3>
-              <div class="paragraph">
-                <ion-icon
-                  name="call-outline"
-                  class="section-people-team-member-icon"
-                ></ion-icon>
-                123-456-7890
-              </div>
-              <div class="paragraph">
-                <ion-icon
-                  name="mail-outline"
-                  class="section-people-team-member-icon"
-                ></ion-icon>
-                loremipsum@gmail.com
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="section-people-team-member">
-              <img
-                class="mx-auto rounded-circle section-people-photo"
-                src="assets/img/people-3.jpg"
-                alt="..."
-              />
-              <h3 class="heading-tertiary">Lorem Ipsum</h3>
-              <div class="paragraph">
-                <ion-icon
-                  name="call-outline"
-                  class="section-people-team-member-icon"
-                ></ion-icon>
-                123-456-7890
-              </div>
-              <div class="paragraph">
-                <ion-icon
-                  name="mail-outline"
-                  class="section-people-team-member-icon"
-                ></ion-icon>
-                loremipsum@gmail.com
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="section-people-team-member">
-              <img
-                class="mx-auto rounded-circle section-people-photo"
-                src="assets/img/people-4.jpg"
-                alt="..."
-              />
-              <h3 class="heading-tertiary">Lorem Ipsum</h3>
-              <div class="paragraph">
-                <ion-icon
-                  name="call-outline"
-                  class="section-people-team-member-icon"
-                ></ion-icon>
-                123-456-7890
-              </div>
-              <div class="paragraph">
-                <ion-icon
-                  name="mail-outline"
-                  class="section-people-team-member-icon"
-                ></ion-icon>
-                loremipsum@gmail.com
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="section-people-team-member">
-              <img
-                class="mx-auto rounded-circle section-people-photo"
-                src="assets/img/people-5.png"
-                alt="..."
-              />
-              <h3 class="heading-tertiary">Lorem Ipsum</h3>
-              <div class="paragraph">
-                <ion-icon
-                  name="call-outline"
-                  class="section-people-team-member-icon"
-                ></ion-icon>
-                123-456-7890
-              </div>
-              <div class="paragraph">
-                <ion-icon
-                  name="mail-outline"
-                  class="section-people-team-member-icon"
-                ></ion-icon>
-                loremipsum@gmail.com
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div
-              class="section-people-team-member section-people-team-member-contact"
-              data-bs-container="body"
-              data-bs-toggle="popover"
-              data-bs-placement="bottom"
-              data-bs-custom-class="custom-popover"
-              data-bs-title="Contact Info"
-              data-bs-content="Please contact JY by ljyjiayang@gmail.com"
-            >
-              <ion-icon
-                class="section-people-team-member-add rounded-circle"
-                name="add-outline"
-              ></ion-icon>
-              <h3 class="heading-tertiary">Join us!</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section-publication" id="publication">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="heading-secondary mb-5">Publication</h2>
+      <!-- publication -->
+      <section class="section-publication" id="publication">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="heading-secondary mb-5">Publication</h2>
+          </div>
+          <div class="section-publication-papers list-group">
+            <div class="section-publication-papers-paper">
+              Tan CL, Knight ZA. Regulation of Body Temperature by the Nervous
+              System. Neuron. 2018 Apr 4;98(1):31-48. doi:
+              10.1016/j.neuron.2018.02.022. PMID: 29621489; PMCID: PMC6034117.
+            </div>
+            <div class="section-publication-papers-paper">
+              Bai L, Mesgarzadeh S, Ramesh KS, Huey EL, Liu Y, Gray LA, Aitken
+              TJ, Chen Y, Beutler LR, Ahn JS, Madisen L, Zeng H, Krasnow MA,
+              Knight ZA. Genetic Identification of Vagal Sensory Neurons That
+              Control Feeding. Cell. 2019 Nov 14;179(5):1129-1143.e23. doi:
+              10.1016/j.cell.2019.10.031. PMID: 31730854; PMCID: PMC6916730.
+            </div>
+            <div class="section-publication-papers-paper">
+              Grove JCR, Gray LA, La Santa Medina N, Sivakumar N, Ahn JS, Corpuz
+              TV, Berke JD, Kreitzer AC, Knight ZA. Dopamine subsystems that
+              track internal states. Nature. 2022 Aug;608(7922):374-380. doi:
+              10.1038/s41586-022-04954-0. Epub 2022 Jul 13. PMID: 35831501;
+              PMCID: PMC9365689.
+            </div>
+            <div class="section-publication-papers-paper">
+              Leib DE, Zimmerman CA, Knight ZA. Thirst. Curr Biol. 2016 Dec
+              19;26(24):R1260-R1265. doi: 10.1016/j.cub.2016.11.019. PMID:
+              27997832; PMCID: PMC5957508.
+            </div>
+          </div>
         </div>
-        <div class="section-publication-papers list-group">
-          <div class="section-publication-papers-paper">
-            Tan CL, Knight ZA. Regulation of Body Temperature by the Nervous
-            System. Neuron. 2018 Apr 4;98(1):31-48. doi:
-            10.1016/j.neuron.2018.02.022. PMID: 29621489; PMCID: PMC6034117.
-          </div>
-          <div class="section-publication-papers-paper">
-            Bai L, Mesgarzadeh S, Ramesh KS, Huey EL, Liu Y, Gray LA, Aitken TJ,
-            Chen Y, Beutler LR, Ahn JS, Madisen L, Zeng H, Krasnow MA, Knight
-            ZA. Genetic Identification of Vagal Sensory Neurons That Control
-            Feeding. Cell. 2019 Nov 14;179(5):1129-1143.e23. doi:
-            10.1016/j.cell.2019.10.031. PMID: 31730854; PMCID: PMC6916730.
-          </div>
-          <div class="section-publication-papers-paper">
-            Grove JCR, Gray LA, La Santa Medina N, Sivakumar N, Ahn JS, Corpuz
-            TV, Berke JD, Kreitzer AC, Knight ZA. Dopamine subsystems that track
-            internal states. Nature. 2022 Aug;608(7922):374-380. doi:
-            10.1038/s41586-022-04954-0. Epub 2022 Jul 13. PMID: 35831501; PMCID:
-            PMC9365689.
-          </div>
-          <div class="section-publication-papers-paper">
-            Leib DE, Zimmerman CA, Knight ZA. Thirst. Curr Biol. 2016 Dec
-            19;26(24):R1260-R1265. doi: 10.1016/j.cub.2016.11.019. PMID:
-            27997832; PMCID: PMC5957508.
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- bootstrap js files -->
     <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
